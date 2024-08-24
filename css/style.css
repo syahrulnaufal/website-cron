@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --white: #F6F1E9;
+    --red: #6B1B00;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+/* *{
+    background-color: rgba(50, 205, 50,0.2) ;
+} */
+
+body{
+    font-family: "Poppins", sans-serif  ;
+    height: 200vh;
+    width: 100vw;
+    color: var(--white);
+    overflow-x: hidden;
+}
+.mynavbar{
+    padding: 0;
+    padding-right: 3rem;
+}
+.navbar-home li a,.navbar-acount li a{
+    padding: 0.6rem;
+    /* padding-right: 0; */
+}
+.navbar-home li:last-child a,.navbar-acount li:last-child a{
+    /* padding: 0.6rem 1.2rem ; */
+    padding-right: 0;
+}
+.mycarousel{
+    height: 90vh;
+}
+.text{
+    left: 2rem;
+    padding: 3rem;
+    padding-bottom: 8rem;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/* .navbar{
+    height: 4rem;
+} */
+.info{
+    min-height: 3rem;
+    width: 100vw;
+    /* gap: 1.5rem; */
+    --bs-gutter-x: 0;
+}
+.info > div {
+    min-height: 4rem;
+    --bs-gutter-x: 0;
+}
+.info-icon{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 2rem;
+    /* height: 50%; */
+}
+.info-text > a{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+
+
+@media screen and (max-width: 630px){
+    .mynavbar{
+        padding: 0;
+    }
+    .mycarousel{
+        height: 60vh;
+    }
+    .text{
+        left: 0;
+        padding: 2rem;
+        width: 90%;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    
+    html{
+        font-size: 12px;
+    }
+    .mynavbar{
+        padding: 0;
+    }
+    .mycarousel{
+        height: 40vh;
+    }
+    .text{
+        left: 0;
+        padding: 2rem;
+        width: 90%;
+        gap: 0;
+    }
+    .info > div {
+        height: 2rem;
+        /* gap: .5rem; */
+    }
+    /* .navbar{
+        height: 3rem;
+    } */
+}
+@media screen and (max-width: 768px) and (min-width: 631px) {
+    html{
+        font-size: 14px;
+    }
+    .mycarousel{
+        height: 70vh;
+    }
+    .mynavbar{
+        padding-right: 2rem;
+    }
+}
+@media screen and (min-width: 1440px) {
+    html{
+       font-size: 24px;
+    }
+}
