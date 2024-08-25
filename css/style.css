@@ -3,13 +3,18 @@
 :root{
     --white: #F6F1E9;
     --red: #6B1B00;
+    --yellow: #EDD6BC;
 }
 ::-webkit-scrollbar {
     display: none;
 }
-/* *{
-    background-color: rgba(50, 205, 50,0.2) ;
-} */
+*{
+    /* background-color: rgba(50, 205, 50,0.2) ; */
+}
+
+.no-gutter{
+    --bs-gutter-x: 0;
+}
 
 body{
     font-family: "Poppins", sans-serif  ;
@@ -49,11 +54,9 @@ body{
     min-height: 3rem;
     width: 100vw;
     /* gap: 1.5rem; */
-    --bs-gutter-x: 0;
 }
 .info > div {
     min-height: 4rem;
-    --bs-gutter-x: 0;
 }
 .info-icon{
     background-size: contain;
@@ -69,7 +72,16 @@ a{
     text-decoration: none;
     color: var(--white);
 }
-
+a:hover{
+        color: var(--white);
+}
+.check-menu-button{
+    background-color: var(--red);
+}
+.check-menu-button:hover{
+        background-color: #bf451c;
+        transition: all 0.2s ease;
+}
 
 
 
