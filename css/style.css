@@ -8,7 +8,7 @@
 ::-webkit-scrollbar {
     display: none;
 }
-*{background-color: rgba(50, 205, 50,0.2)}
+/* *{background-color: rgba(50, 205, 50,0.2)} */
 
 .no-gutter{
     --bs-gutter-x: 0;
@@ -19,6 +19,7 @@ body{
     min-height: 200vh;
     width: 100vw;
     color: var(--white);
+    background-color: var(--white);
     overflow-x: hidden;
 }
 .mynavbar{
@@ -119,7 +120,13 @@ a:hover{
 }
 
 .drink-wrapper{
-    height: 20rem;
+    height: 18rem;
+}
+.drink{
+    width: 15rem;
+}
+.drink-pic{
+    width: 100%;
 }
 
 @media screen and (max-width: 630px){
