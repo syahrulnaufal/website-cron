@@ -8,9 +8,7 @@
 ::-webkit-scrollbar {
     display: none;
 }
-*{
-    /* background-color: rgba(50, 205, 50,0.2) ; */
-}
+*{background-color: rgba(50, 205, 50,0.2)}
 
 .no-gutter{
     --bs-gutter-x: 0;
@@ -18,7 +16,7 @@
 
 body{
     font-family: "Poppins", sans-serif  ;
-    height: 200vh;
+    min-height: 200vh;
     width: 100vw;
     color: var(--white);
     overflow-x: hidden;
@@ -73,7 +71,7 @@ a{
     color: var(--white);
 }
 a:hover{
-        color: var(--white);
+        color: var(--yellow);
 }
 .check-menu-button{
     background-color: var(--red);
@@ -83,7 +81,46 @@ a:hover{
         transition: all 0.2s ease;
 }
 
+.food-wrapper{
+    height: 50vh;
+    max-height: fit-content;
+}
+.food-pic{
+    /* background-image: url("../img/slay-circcle.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+    height: 100%;
+    position: relative;
+}
+.pic1{
+    
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    /* top: 12%; */
+    left: 5%;
+}
+.pic1 > img{
+    border: 0.4rem solid var(--white);
+    box-sizing: border-box;
+}
+.pic2{
+    
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    /* top: 40%; */
+    right: 5%;
+}
+.pic2 > img{
+    border: 0.4rem solid var(--white);
+    box-sizing: border-box;
+}
 
+.drink-wrapper{
+    height: 20rem;
+}
 
 @media screen and (max-width: 630px){
     .mynavbar{
@@ -97,6 +134,9 @@ a:hover{
         padding: 2rem;
         width: 90%;
         gap: 0;
+    }
+    .pic1 .pic2{
+        width: 70%;
     }
 }
 
@@ -121,6 +161,12 @@ a:hover{
         height: 2rem;
         /* gap: .5rem; */
     }
+    .pic1, .pic2{
+        width: 70%;
+    }
+    /* .food-pic{
+        height: 80%;
+    } */
     /* .navbar{
         height: 3rem;
     } */
