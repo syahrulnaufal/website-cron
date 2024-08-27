@@ -72,7 +72,7 @@ a{
     color: var(--white);
 }
 a:hover{
-        color: var(--yellow);
+    color: var(--yellow);
 }
 .check-menu-button{
     background-color: var(--red);
@@ -128,6 +128,12 @@ a:hover{
 .drink-pic{
     width: 100%;
 }
+
+.t-white{color: var(--white);}
+.t-yellow{color: var(--yellow);}
+/* .myfooter a {
+    color: black;
+} */
 
 @media screen and (max-width: 630px){
     .mynavbar{
