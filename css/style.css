@@ -34,6 +34,9 @@ body{
     /* padding: 0.6rem 1.2rem ; */
     padding-right: 0;
 }
+.navbar-toggler:hover{
+    border: none !important;
+}
 .mycarousel{
     height: 90vh;
 }
